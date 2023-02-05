@@ -1,0 +1,722 @@
+@charset "UTF-8";
+/* ubuntu-regular - latin-ext_latin */
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("./fonts/ubuntu-v20-latin-ext_latin-regular.woff2") format("woff2"), url("./fonts/ubuntu-v20-latin-ext_latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/*logo*/
+.logo {
+  display: flex;
+  margin: 1em;
+  padding-left: 6em;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo .listakontakt {
+  display: flex;
+}
+.logo .listakontakt p {
+  margin: 2em;
+  font-family: "Ubuntu";
+  font-size: 1.3em;
+}
+.logo .listakontakt p a {
+  text-decoration: none;
+  color: rgb(63, 97, 65);
+  border-radius: 10px;
+  padding: 1em;
+  transition: all 1s ease;
+}
+.logo .listakontakt p a i {
+  margin: 0.3em;
+  font-size: 1.3em;
+}
+.logo .listakontakt p a:hover {
+  text-decoration: underline;
+  background: rgb(63, 97, 65);
+  color: #fff;
+  padding: 1em;
+}
+
+/*menu lista*/
+header {
+  width: 100vw;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  background: rgb(63, 97, 65);
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  display: flex;
+  margin: 0 1em;
+  padding: 1em 0;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-family: "Ubuntu";
+  color: #fff;
+  font-size: 1.5em;
+  transition: all 0.3s;
+}
+header nav ul li a i {
+  margin-right: 0.4em;
+}
+header nav ul li a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #000;
+}
+
+@media (max-width: 1220px) {
+  .logo {
+    justify-content: space-around;
+  }
+  .logo .listakontakt {
+    flex-direction: column;
+  }
+  .logo .listakontakt p {
+    margin: 0.4em;
+  }
+}
+@media (max-width: 920px) {
+  .hole .fotorada img {
+    width: 30vw;
+    height: auto;
+  }
+}
+@media (max-width: 905px) {
+  .mys {
+    flex-direction: column;
+    align-items: center;
+  }
+  .mys .mysfototext h3 {
+    padding: 1em;
+    font-size: 1.1em;
+  }
+  .mys .mysfototext p {
+    display: none;
+  }
+  .mys .mysfototext .mysfotocena {
+    padding: 0.4em;
+    font-size: 1em;
+  }
+  .hole h1 {
+    font-size: 4vw;
+  }
+  .hole .popismys h2 {
+    font-size: 3vw;
+  }
+}
+@media (max-width: 828px) {
+  .logo {
+    flex-direction: column;
+    padding-left: 0em;
+  }
+  .logo .listakontakt {
+    align-items: center;
+  }
+}
+.container {
+  padding-top: 2em;
+  width: 70vw;
+}
+.container .cara {
+  border-top: 1px solid #000;
+}
+
+@media (max-width: 710px) {
+  .fotouvod {
+    flex-direction: column;
+  }
+  .fotouvod img {
+    margin-top: 1em;
+  }
+}
+@media (max-width: 666px) {
+  .hole .fotorada {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hole .fotorada img {
+    width: 60vw;
+    margin-top: 1em;
+  }
+}
+@media (max-width: 444px) {
+  .logo {
+    justify-content: center;
+  }
+  .logo img {
+    width: 80vw;
+    height: auto;
+  }
+  .logo .listakontakt p {
+    font-size: 5vw;
+  }
+  .logo .listakontakt p a {
+    padding: 0;
+  }
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav ul li a {
+    font-size: 5vw;
+  }
+  .container .mystext h1 {
+    font-size: 6vw;
+  }
+  .mys .mysfototext h3 {
+    font-size: 5vw;
+  }
+  .mys .mysfototext img {
+    width: 80vw;
+    height: auto;
+  }
+  .mys .mysfotocena h3 {
+    font-size: 5vw;
+  }
+  footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .container nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .container nav ul li {
+    text-align: center;
+    display: flex;
+  }
+  footer .container .footerkontakt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .mysfoto {
+    display: flex;
+  }
+  .mysfoto .obrazek a p {
+    text-decoration: none;
+    color: #fff;
+  }
+  .mysfoto .obrazek a img {
+    width: 100%;
+    height: auto;
+  }
+  .mystext p {
+    display: none;
+  }
+  .fotopodrada img {
+    width: 80vw;
+    height: auto;
+  }
+}
+@media (max-width: 350px) {
+  h2 {
+    font-size: 9vw;
+  }
+  .fotouvod img {
+    width: 90vw;
+    height: auto;
+  }
+}
+@media (max-width: 305px) {
+  .uvod p {
+    display: none;
+  }
+}
+@media (max-width: 265px) {
+  header nav ul li a {
+    font-size: 10.5vw;
+  }
+  .mys .mysfoto .obrazek a p {
+    font-size: 5vw;
+  }
+  footer p {
+    font-size: 5.6vw;
+  }
+  .spodek .copyrajt p {
+    font-size: 7vw;
+  }
+}
+.tabulkacena {
+  display: flex;
+  padding-top: 2em;
+  flex-direction: column;
+  align-items: center;
+}
+.tabulkacena h3 {
+  padding: 10px;
+  font-size: 20px;
+}
+.tabulkacena table {
+  display: flex;
+}
+.tabulkacena table .tabulkaprvniradka {
+  font-weight: bold;
+}
+.tabulkacena table .tabulkaprvniradka th {
+  padding: 1em;
+  font-size: 1em;
+  color: rgb(63, 97, 65);
+}
+.tabulkacena table tr {
+  border: 1px solid rgb(63, 97, 65);
+}
+.tabulkacena table tr:nth-child(even) {
+  background-color: #ddd;
+}
+.tabulkacena table tr td {
+  text-align: center;
+  font-weight: bold;
+  padding: 1em 3em;
+  border: 1px solid #000;
+}
+.tabulkacena table tr:hover {
+  color: #fff;
+  background-color: rgb(63, 97, 65);
+}
+
+@media (max-width: 666px) {
+  .tabulkacena h3 {
+    font-size: 5vw;
+  }
+  .tabulkacena table tr td {
+    padding: 1em;
+  }
+}
+@media (max-width: 444px) {
+  table {
+    width: 100%;
+  }
+  table tr {
+    width: 90vh;
+  }
+  table tr th {
+    padding: auto;
+  }
+  table tr td {
+    padding: 0;
+  }
+}
+@media (max-width: 320px) {
+  .tabulkacena table .tabulkaprvniradka th {
+    font-size: 7vw;
+  }
+  .tabulkacena table tr td {
+    font-size: 6vw;
+  }
+}
+/*FOOTER*/
+.TextRada {
+  padding: 1em 0 1em;
+  font-size: 0.8em;
+}
+
+footer {
+  background: rgb(63, 97, 65);
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+footer .container {
+  display: flex;
+  justify-content: space-around;
+}
+footer .container nav {
+  padding: 1.4em;
+}
+footer .container nav h4 {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0.5em 0;
+}
+footer .container nav ul li {
+  line-height: 150%;
+}
+footer .container nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+footer .container nav ul li a:hover {
+  text-decoration: underline;
+}
+footer .container .footerkontakt {
+  padding: 1.4em;
+}
+footer .container .footerkontakt h4 {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0.5em 0;
+}
+footer .container .footerkontakt p {
+  line-height: 200%;
+}
+footer .container .footerkontakt p a {
+  color: #fff;
+  text-decoration: none;
+}
+footer .container .footerkontakt p a:hover {
+  text-decoration: underline;
+}
+
+/*spodek-webu*/
+.spodek {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.spodek .copyrajt p {
+  padding: 1em;
+}
+.spodek .spodektext p {
+  font-size: 0.6em;
+}
+
+/* Uvod */
+html {
+  font-family: "Ubuntu";
+  font-size: 16px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Sekce uvod*/
+.uvod {
+  display: flex;
+  margin: 0 0.6em;
+}
+.uvod h1 {
+  font-size: 1.3em;
+  text-align: center;
+  padding: 2em 0 1em 0;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.uvod .tucne {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.uvod p {
+  letter-spacing: 1.5px;
+  line-height: 150%;
+  text-align: center;
+}
+.uvod .normaltext {
+  text-align: left;
+}
+
+/*Telo Webu*/
+.container {
+  padding-top: 2em;
+  width: 55vw;
+}
+.container .cara {
+  border-top: 1px solid #000;
+}
+.container .caradve {
+  height: 1px;
+  width: 40vw;
+  background: #000;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: rgb(63, 97, 65);
+  padding-bottom: 1em;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.fotouvod {
+  display: flex;
+}
+.fotouvod a {
+  text-decoration: none;
+}
+.fotouvod a .zophobas {
+  padding-top: 5.8em;
+}
+.fotouvod a .stin {
+  box-shadow: 4px 5px 5px #000000;
+}
+.fotouvod a img {
+  border-radius: 0.4em;
+  margin: 0 1em;
+  transition: 0.3s;
+  /*
+  	&:hover {
+
+
+
+  		box-shadow: 5px 2px 6px 1px #000;
+  		border-radius: 0.8em;
+
+  	}*/
+}
+.fotouvod a p {
+  text-align: center;
+  color: rgb(63, 97, 65);
+  margin: 0.5em;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+/*tabulka*/
+/*HMYZ*/
+.texthmyz {
+  display: flex;
+  flex-direction: column;
+}
+.texthmyz h3 {
+  text-align: center;
+  font-weight: bold;
+}
+.texthmyz p {
+  text-align: center;
+  padding: 0.5em 0 2em;
+}
+
+.mys .mysfoto .obrazek a .textcopy {
+  color: #000;
+  text-shadow: none;
+}
+.mys .mysfototext .hmyztext {
+  display: flex;
+  width: 220px;
+  flex-direction: column;
+  align-items: center;
+}
+.mys .mysfototext .hmyztext h3 {
+  text-align: center;
+}
+.mys .mysfototext .hmyztext h4 {
+  font-weight: bold;
+  font-size: 0.8em;
+  padding: 0.5em;
+}
+.mys .mysfototext .hmyztext p {
+  text-align: center;
+}
+.mys .mysfototext .hmyztext img {
+  justify-content: center;
+}
+
+.mys .hmyzfotocena {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.mys h3 {
+  font-size: 1em;
+  padding: 0.6em;
+  font-weight: bold;
+}
+.mys p {
+  padding: 0.5em;
+}
+
+/*Mys*/
+.container .mystext h1 {
+  text-align: center;
+  font-size: 1.6em;
+  padding-bottom: 1em;
+}
+.container .mystext h2 {
+  text-align: center;
+  font-size: 1.2em;
+}
+.container .mystext p {
+  text-align: justify;
+  letter-spacing: 0.5px;
+  font-size: 1.1em;
+  padding: 1em;
+  text-indent: 1em;
+  line-height: 150%;
+}
+
+/*myš...*/
+.mys {
+  display: flex;
+  justify-content: space-around;
+}
+.mys .mysfoto .obrazek {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "obrazek";
+}
+.mys .mysfoto .obrazek a {
+  text-decoration: none;
+  display: grid;
+  color: #fff;
+  align-items: end;
+  justify-items: end;
+}
+.mys .mysfoto .obrazek img {
+  grid-area: obrazek;
+  border-radius: 8px;
+}
+.mys .mysfoto .obrazek p {
+  padding: 5px 8px;
+  grid-area: obrazek;
+  color: #fff;
+  z-index: 1;
+  text-shadow: 2px -1px 1px #000;
+  font-size: 0.8em;
+}
+
+.mysfototext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mysfototext h3 {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: rgb(63, 97, 65);
+}
+.mysfototext .italic {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 0.8em;
+  padding-bottom: 0.5rem;
+}
+.mysfototext p {
+  line-height: 150%;
+}
+
+.mysfotocena {
+  display: flex;
+  align-items: center;
+}
+.mysfotocena h3 {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: rgb(63, 97, 65);
+}
+
+/*Podstranka*/
+.hole {
+  display: flex;
+  flex-direction: column;
+}
+.hole .tlacitka {
+  display: flex;
+  justify-content: space-between;
+}
+.hole .tlacitka a {
+  text-decoration: none;
+  font-size: 1em;
+  color: rgb(63, 97, 65);
+  padding: 1em 2em;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 0 15px;
+  transition: all 0.2s ease;
+}
+.hole .tlacitka a:hover {
+  border: 1px solid #000;
+}
+.hole .tlacitka .tlacitkoZpet {
+  display: flex;
+}
+.hole .tlacitka .tlacitkoZpet a:hover i {
+  transform: translateX(-10px);
+}
+.hole .tlacitka .tlacitkoZpet a .fa-angles-left {
+  margin-right: 15px;
+  transition: all 0.2s ease;
+}
+.hole .tlacitka .tlacitkoDalsi {
+  display: flex;
+}
+.hole .tlacitka .tlacitkoDalsi a:hover i {
+  transform: translateX(10px);
+}
+.hole .tlacitka .tlacitkoDalsi a .fa-angles-right {
+  margin-left: 15px;
+  transition: all 0.2s ease;
+}
+.hole h1 {
+  font-size: 21px;
+  text-align: center;
+  padding: 1em;
+  color: rgb(63, 97, 65);
+}
+
+.fotorada {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3em;
+  margin: 0 1em;
+  align-items: center;
+}
+.fotorada img {
+  border-radius: 10px;
+  margin: 0 1em;
+}
+
+.fotopodrada {
+  display: flex;
+  justify-content: center;
+}
+.fotopodrada .stin {
+  box-shadow: none;
+}
+.fotopodrada img {
+  border-radius: 10px;
+  margin-bottom: 2em;
+  box-shadow: 5px 3px 7px #000;
+}
+
+.popismys {
+  display: flex;
+  flex-direction: column;
+}
+.popismys h2 {
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+.popismys h3 {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding-bottom: 0.5em;
+}
+.popismys p {
+  padding-bottom: 1em;
+  text-align: justify;
+  line-height: 150%;
+  text-indent: 1em;
+  word-spacing: 1px;
+}
+
+/*responziv *//*# sourceMappingURL=style.css.map */
